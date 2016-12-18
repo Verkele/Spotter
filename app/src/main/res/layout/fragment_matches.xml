@@ -1,0 +1,110 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.victoriakalembka.spotter.matches">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <Button
+        android:text="Home"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/button17"
+        android:layout_alignStart="@+id/button18"
+        android:id="@+id/button15" />
+
+    <Button
+        android:text="Try Again"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="29dp"
+        android:id="@+id/button17"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/button16" />
+
+    <Button
+        android:text="Greet"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/button18"
+        android:layout_marginEnd="61dp"
+        android:layout_above="@+id/button15"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:text="Attendance"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/button16"
+        android:layout_marginEnd="25dp"
+        android:layout_above="@+id/button17"
+        android:layout_toStartOf="@+id/button18" />
+
+    <TextView
+        android:text="Results:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22dp"
+        android:id="@+id/textView6"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="@android:color/holo_orange_dark" />
+
+    <ImageView
+        android:layout_height="140dp"
+        app:srcCompat="@android:drawable/screen_background_dark"
+        android:layout_marginStart="16dp"
+        android:id="@+id/imageView5"
+        android:layout_alignTop="@+id/imageView4"
+        android:layout_toEndOf="@+id/imageView4"
+        android:layout_width="100dp" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="140dp"
+        app:srcCompat="@android:drawable/screen_background_dark"
+        android:id="@+id/imageView6"
+        android:layout_alignTop="@+id/imageView5"
+        android:layout_toEndOf="@+id/imageView5"
+        android:layout_marginStart="11dp" />
+
+    <ImageView
+        android:layout_height="140dp"
+        app:srcCompat="@android:drawable/screen_background_dark"
+        android:id="@+id/imageView4"
+        android:layout_width="100dp"
+        android:layout_marginBottom="15dp"
+        android:layout_above="@+id/button16"
+        android:layout_toStartOf="@+id/textView6" />
+
+    <ImageView
+        app:srcCompat="@android:drawable/screen_background_dark"
+        android:layout_marginTop="12dp"
+        android:id="@+id/imageView"
+        android:layout_height="140dp"
+        android:layout_marginEnd="13dp"
+        android:layout_width="100dp"
+        android:layout_below="@+id/textView6"
+        android:layout_toStartOf="@+id/button18" />
+
+    <Button
+        android:text="No matches"
+        android:layout_height="wrap_content"
+        android:id="@+id/button20"
+        android:layout_width="120dp"
+        android:layout_below="@+id/button19"
+        android:layout_alignStart="@+id/button19" />
+
+    <Button
+        android:text="New pic"
+        android:layout_height="wrap_content"
+        android:id="@+id/button19"
+        android:layout_marginTop="14dp"
+        android:layout_width="120dp"
+        android:layout_alignTop="@+id/imageView"
+        android:layout_alignStart="@+id/button18" />
+</RelativeLayout>

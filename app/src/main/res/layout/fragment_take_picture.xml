@@ -1,0 +1,49 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.victoriakalembka.spotter.takePicture">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <ImageView
+        app:srcCompat="@android:drawable/screen_background_dark"
+        android:id="@+id/imageView2"
+        android:layout_marginTop="69dp"
+        android:layout_width="260dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_height="400dp" />
+
+    <TextView
+        android:text="Center the face, and align it with the guide lines. Hit the camera button to take the photo."
+        android:layout_height="50dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/textView2"
+        android:layout_alignParentTop="true"
+        android:layout_width="400dp"
+        android:textColor="@android:color/holo_orange_dark"
+        android:textSize="14sp" />
+
+    <ImageView
+        app:srcCompat="@android:drawable/ic_menu_camera"
+        android:id="@+id/imageView3"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignBottom="@+id/imageView2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="26dp" />
+
+    <TextView
+        android:text="eye                     eye"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView4"
+        android:layout_marginTop="143dp"
+        android:layout_alignTop="@+id/imageView2"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
