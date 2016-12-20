@@ -11,7 +11,7 @@
         android:layout_height="50dp"
         android:layout_marginTop="40dp"
         android:layout_marginLeft="125dp"
-        android:id="@+id/textView3"
+        android:id="@+id/greeting"
         android:layout_width="140dp"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         android:textColor="@android:color/holo_orange_dark" />
@@ -19,8 +19,8 @@
     <Button
         android:text='"Hello [...]"'
         android:layout_height="50dp"
-        android:id="@+id/button9"
-        android:layout_below="@+id/textView3"
+        android:id="@+id/greeting_hello"
+        android:layout_below="@+id/greeting"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
         android:layout_width="200dp"
@@ -29,10 +29,10 @@
     <Button
         android:text='"Nice to see you [...]"'
         android:layout_height="50dp"
-        android:layout_below="@+id/button9"
+        android:layout_below="@+id/greeting_hello"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
-        android:id="@+id/button10"
+        android:id="@+id/greeting_nice"
         android:textSize="14sp"
         android:layout_width="200dp" />
 
@@ -40,35 +40,35 @@
         android:text='"Have a nice day [...]"'
         android:layout_width="200dp"
         android:layout_height="50dp"
-        android:layout_below="@+id/button10"
+        android:layout_below="@+id/greeting_nice"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
-        android:id="@+id/button11" />
+        android:id="@+id/greeting_have" />
 
     <Button
         android:text='"Good morning [...]"'
         android:layout_width="200dp"
         android:layout_height="50dp"
-        android:layout_below="@+id/button11"
+        android:layout_below="@+id/greeting_have"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
-        android:id="@+id/button12" />
+        android:id="@+id/greeting_morning" />
 
     <Button
         android:text='"Good afternoon [...]"'
         android:layout_width="200dp"
         android:layout_height="50dp"
-        android:layout_below="@+id/button12"
+        android:layout_below="@+id/greeting_morning"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
-        android:id="@+id/button13" />
+        android:id="@+id/greeting_afternoon" />
 
     <Button
         android:text='"Good evening [...]"'
         android:layout_width="200dp"
         android:layout_height="50dp"
-        android:layout_below="@+id/button13"
+        android:layout_below="@+id/greeting_afternoon"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
-        android:id="@+id/button14" />
+        android:id="@+id/greeting_evening" />
 </RelativeLayout>

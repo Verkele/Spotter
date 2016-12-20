@@ -12,36 +12,36 @@
         android:text="Home"
         android:layout_width="120dp"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/button17"
-        android:layout_alignStart="@+id/button18"
-        android:id="@+id/button15" />
+        android:layout_alignBottom="@+id/results_tryagain"
+        android:layout_alignStart="@+id/results_greet"
+        android:id="@+id/results_home" />
 
     <Button
         android:text="Try Again"
         android:layout_width="120dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="29dp"
-        android:id="@+id/button17"
+        android:id="@+id/results_tryagain"
         android:layout_alignParentBottom="true"
-        android:layout_alignStart="@+id/button16" />
+        android:layout_alignStart="@+id/results_attendance" />
 
     <Button
         android:text="Greet"
         android:layout_width="120dp"
         android:layout_height="wrap_content"
-        android:id="@+id/button18"
+        android:id="@+id/results_greet"
         android:layout_marginEnd="61dp"
-        android:layout_above="@+id/button15"
+        android:layout_above="@+id/results_home"
         android:layout_alignParentEnd="true" />
 
     <Button
         android:text="Attendance"
         android:layout_width="120dp"
         android:layout_height="wrap_content"
-        android:id="@+id/button16"
+        android:id="@+id/results_attendance"
         android:layout_marginEnd="25dp"
-        android:layout_above="@+id/button17"
-        android:layout_toStartOf="@+id/button18" />
+        android:layout_above="@+id/results_tryagain"
+        android:layout_toStartOf="@+id/results_greet" />
 
     <TextView
         android:text="Results:"
@@ -50,7 +50,7 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="22dp"
-        android:id="@+id/textView6"
+        android:id="@+id/results"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         android:textColor="@android:color/holo_orange_dark" />
 
@@ -58,53 +58,53 @@
         android:layout_height="140dp"
         app:srcCompat="@android:drawable/screen_background_dark"
         android:layout_marginStart="16dp"
-        android:id="@+id/imageView5"
-        android:layout_alignTop="@+id/imageView4"
-        android:layout_toEndOf="@+id/imageView4"
+        android:id="@+id/imageView5_result2"
+        android:layout_alignTop="@+id/imageView4_result1"
+        android:layout_toEndOf="@+id/imageView4_result1"
         android:layout_width="100dp" />
 
     <ImageView
         android:layout_width="100dp"
         android:layout_height="140dp"
         app:srcCompat="@android:drawable/screen_background_dark"
-        android:id="@+id/imageView6"
-        android:layout_alignTop="@+id/imageView5"
-        android:layout_toEndOf="@+id/imageView5"
+        android:id="@+id/imageView6_result3"
+        android:layout_alignTop="@+id/imageView5_result2"
+        android:layout_toEndOf="@+id/imageView5_result2"
         android:layout_marginStart="11dp" />
 
     <ImageView
         android:layout_height="140dp"
         app:srcCompat="@android:drawable/screen_background_dark"
-        android:id="@+id/imageView4"
+        android:id="@+id/imageView4_result1"
         android:layout_width="100dp"
         android:layout_marginBottom="15dp"
-        android:layout_above="@+id/button16"
-        android:layout_toStartOf="@+id/textView6" />
+        android:layout_above="@+id/results_attendance"
+        android:layout_toStartOf="@+id/results" />
 
     <ImageView
         app:srcCompat="@android:drawable/screen_background_dark"
         android:layout_marginTop="12dp"
-        android:id="@+id/imageView"
+        android:id="@+id/imageView_takenpic"
         android:layout_height="140dp"
         android:layout_marginEnd="13dp"
         android:layout_width="100dp"
-        android:layout_below="@+id/textView6"
-        android:layout_toStartOf="@+id/button18" />
-
-    <Button
-        android:text="No matches"
-        android:layout_height="wrap_content"
-        android:id="@+id/button20"
-        android:layout_width="120dp"
-        android:layout_below="@+id/button19"
-        android:layout_alignStart="@+id/button19" />
+        android:layout_below="@+id/results"
+        android:layout_toStartOf="@+id/results_greet" />
 
     <Button
         android:text="New pic"
         android:layout_height="wrap_content"
-        android:id="@+id/button19"
+        android:id="@+id/results_newpic"
         android:layout_marginTop="14dp"
         android:layout_width="120dp"
-        android:layout_alignTop="@+id/imageView"
-        android:layout_alignStart="@+id/button18" />
+        android:layout_alignTop="@+id/imageView_takenpic"
+        android:layout_alignStart="@+id/results_greet" />
+
+    <Button
+        android:text="No matches"
+        android:layout_height="wrap_content"
+        android:id="@+id/results_nomatches"
+        android:layout_width="120dp"
+        android:layout_below="@+id/results_newpic"
+        android:layout_toEndOf="@+id/imageView_takenpic" />
 </RelativeLayout>

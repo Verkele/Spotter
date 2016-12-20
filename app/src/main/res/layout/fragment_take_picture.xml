@@ -10,7 +10,7 @@
 
     <ImageView
         app:srcCompat="@android:drawable/screen_background_dark"
-        android:id="@+id/imageView2"
+        android:id="@+id/imageView2_take"
         android:layout_marginTop="69dp"
         android:layout_width="260dp"
         android:layout_alignParentTop="true"
@@ -22,7 +22,7 @@
         android:layout_height="50dp"
         android:layout_marginTop="13dp"
         android:layout_marginLeft="20dp"
-        android:id="@+id/textView2"
+        android:id="@+id/take_instructions"
         android:layout_alignParentTop="true"
         android:layout_width="400dp"
         android:textColor="@android:color/holo_orange_dark"
@@ -33,7 +33,7 @@
         android:id="@+id/imageView3"
         android:layout_width="70dp"
         android:layout_height="70dp"
-        android:layout_alignBottom="@+id/imageView2"
+        android:layout_alignBottom="@+id/imageView2_take"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="26dp" />
 
@@ -43,7 +43,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/textView4"
         android:layout_marginTop="143dp"
-        android:layout_alignTop="@+id/imageView2"
+        android:layout_alignTop="@+id/imageView2_take"
         android:layout_centerHorizontal="true" />
 
 </RelativeLayout>

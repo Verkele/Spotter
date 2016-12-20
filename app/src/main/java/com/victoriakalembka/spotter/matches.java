@@ -1,8 +1,11 @@
 package com.victoriakalembka.spotter;
 
 import android.content.Context;
+import android.content.Intent;
+import android.graphics.Bitmap;
 import android.net.Uri;
 import android.os.Bundle;
+import android.provider.MediaStore;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -29,6 +32,10 @@ public class matches extends Fragment {
 
     private OnFragmentInteractionListener mListener;
 
+    private Bitmap photo;
+
+    Intent pic = new Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
+    startActivityForResult(pic, RESULT_LOAD_IMAGE);
     public matches() {
         // Required empty public constructor
     }
@@ -49,6 +56,10 @@ public class matches extends Fragment {
         args.putString(ARG_PARAM2, param2);
         fragment.setArguments(args);
         return fragment;
+    }
+
+    public static createBitmaps(){
+
     }
 
     @Override
@@ -105,4 +116,6 @@ public class matches extends Fragment {
         // TODO: Update argument type and name
         void onFragmentInteraction(Uri uri);
     }
+
+
 }
